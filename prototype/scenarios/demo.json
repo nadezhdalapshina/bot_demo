@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "id": "demo",
+  "revision": 1,
+  "title": "Демо",
+  "scenario": {
+    "header": {
+      "name": "Демо-бот",
+      "statusMobile": "бот",
+      "statusDesktop": "В сети"
+    },
+    "autoDelay": 500,
+    "lockPreviousButtons": true,
+    "contacts": [
+      {
+        "id": "demo-contact",
+        "name": "Демо-контакт",
+        "status": "В сети",
+        "avatar": "",
+        "unread": false
+      }
+    ],
+    "meta": {
+      "x": 40,
+      "y": 430
+    },
+    "intro": {
+      "x": 40,
+      "y": 40,
+      "date": "Сегодня",
+      "auto": "greet",
+      "card": {
+        "name": "Демо-бот",
+        "caption": "Пример сценария"
+      }
+    },
+    "nodes": {
+      "greet": {
+        "type": "bot",
+        "x": 420,
+        "y": 40,
+        "time": "09:41",
+        "text": "Привет! Что хотите посмотреть?",
+        "buttons": [
+          {
+            "label": "Возможности",
+            "target": "features"
+          },
+          {
+            "label": "Помощь",
+            "target": "help"
+          }
+        ]
+      },
+      "features": {
+        "type": "bot",
+        "x": 810,
+        "y": 40,
+        "time": "09:41",
+        "text": "В редакторе можно менять сообщения и добавлять новые шаги.",
+        "buttons": [
+          {
+            "label": "В начало",
+            "target": "greet"
+          }
+        ]
+      },
+      "help": {
+        "type": "bot",
+        "x": 810,
+        "y": 430,
+        "time": "09:41",
+        "text": "Откройте редактор, чтобы настроить сценарий для своего бота.",
+        "buttons": [
+          {
+            "label": "В начало",
+            "target": "greet"
+          }
+        ]
+      }
+    }
+  }
+}
