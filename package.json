@@ -1,0 +1,13 @@
+{
+  "name": "ux-bot-prototype-template",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node tools/preview.cjs",
+    "package": "node tools/package-shared.cjs",
+    "test": "node tools/run-checks.cjs"
+  }
+}
